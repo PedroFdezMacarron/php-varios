@@ -6,7 +6,7 @@ class Capitulo
     private $titulo;
     private $fechaEstreno;
     private $duracion;
-    private $valoracion;
+    public $valoracion;
     
     public function __construct($numeroCapitulo,$titulo,$fechaEstreno,$duracion,$valoracion)
     {        

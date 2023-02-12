@@ -19,12 +19,18 @@ class Temporada
         return count($this->capitulos);
     }
 
+    
     public function valorCapitulos(){
         $valorCapitulos=0;
         foreach ($this->capitulos as $capitulo) {
               $valorCapitulos += $capitulo->getValoracion(); 
         }
         return $valorCapitulos;
+    }
+    
+    public function valCapitulos(){      
+        
+        return array_sum(array_map(fn($capi) => $capi->valoracion,$this->capitulos));
     }
 
 }

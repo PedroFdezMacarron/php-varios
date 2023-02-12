@@ -15,6 +15,8 @@ $temporadas[0] = new Temporada(1,2007,$capitulos);
 $temporadas[1] = new Temporada(2,2008,[]);
 $temporadas[3] = new Temporada(3,2009,[]);
 
+
+
 $series[0]= new Serie("The Big Bang Theory","Comedia",$temporadas);
 
 $series[1]= new Serie("Friends","Comedia",[]);
@@ -30,6 +32,10 @@ echo "La serie $nombreSerie tiene $totCapitulos capítulos en la temporada $cons
 echo "<br>";
 
 echo "la valoración media es $valoracionMedia" ;
+
+echo "<br>";
+echo "<br>";
+echo "usando array_sum y array_map la suma de las valoraciones es ".$temporadas[$consultaTemporada]->valCapitulos();
 
 
 
