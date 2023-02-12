@@ -17,7 +17,7 @@ class Jerga
         $this->sustitutions = $sustitutions;        
     }
 
-    function setJerga($sust){
+    function setJerga($sust){       
         $this->sustitutions = $sust;
     }
 
